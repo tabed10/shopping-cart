@@ -1,0 +1,17 @@
+
+.container {
+  padding: 12px;
+}
+.card {
+  margin-top: 8px;
+  width: 100%;
+}
+
+input {
+  width: 30px;
+  margin-left: 6px;
+}
+
+#cart {
+  display: none;
+}
