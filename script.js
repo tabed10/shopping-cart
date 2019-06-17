@@ -15,7 +15,26 @@ $(document).ready(function(){
   console.log("Start here");
   // Basic tasks
   // 1. Show / hide cart section on button click (Cart button / close cutton)
+  $('#showCartBtn').click(function(){
+    $('cart').show();
+  })
+
+  $('#close').click(function(){
+    $('#cart').hide();
+  })
   // 2. Dynamically load products to view
+  for(var i=0; i < products.length; i++){
+    var divCol = $('div class"col-md-4">')
+    var divCard = $('<div class"card-body">')
+    var image = $('img class="card-img-top" src="'+products[i].image+'" />')
+    var divCardBody = $('')
+    cartBtn.attr('id', i)
+    divCardBody.append(title)
+    divCard.append(image)
+    divCard.append(divCardBody)
+    $('#products').append(divCol)
+
+  }
   // 3. Dynamically show total items in Cart
   // 4. Add to cart button functionality
   // 5. Dynamically load cart items
